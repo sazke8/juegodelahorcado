@@ -13,11 +13,12 @@ aqui se registran jugadores nuevos
 <h:form>
 <h:panelGrid columns="3">
 <h:outputLabel for="txtNombre" value="Nombre del jugador nuevo:"/>
-<h:inputText id="txtNombre" label="Nombre" required="true" value="#{usuario.nombre}"/>
+<h:inputText id="txtNombre" label="Nombre" required="true" value="#{user.usuario}"/>
 <h:message for="txtNombre"/>
 
 
-<h:commandButton id="btnEnviar" value="Enviar" action="#{main2.registrar('nombre')}"/>
+<h:commandButton id="btnEnviar" value="Enviar" action="#{main2.registrar(user)}"/>
+<h:outputText value="#{main2.estado}"></h:outputText>
 
 </h:panelGrid>
 </h:form>
