@@ -14,7 +14,7 @@
 		<h:outputText value="ahorcado prueba 1"></h:outputText>
 		<h:outputText value="#{main2.entrarAlSistema()}"></h:outputText>
   
-</h:form>
+</h:form> 
 	</f:view>
 </body>
 </html>
