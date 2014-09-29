@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14119534590880" configfile="/ahorcado/WebContent/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14119534590880" configfile="/ahorcado/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index" x="252" y="168" id="pf14119711354971" outlinks="pf14119714813683 pf14119714813694" inlinks="pf14119714813695 pf14119714813696" path="/index.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="iniciarSesion" x="636" y="252" id="pf14119711354972" outlinks="pf14119714813696" inlinks="pf14119714813694" path="/iniciarSesion.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="registroJugador" x="60" y="396" id="pf14119711354940" outlinks="pf14119714813695" inlinks="pf14119714813683" path="/registroJugador.jsp"/>
+  <links id="pf14119714813683" target="pf14119711354940" source="pf14119711354971" outcome="registrar" fromaction="registrar"/>
+  <links id="pf14119714813695" target="pf14119711354971" source="pf14119711354940" outcome="regresa" fromaction="regresa"/>
+  <links id="pf14119714813694" target="pf14119711354972" source="pf14119711354971" outcome="entrar" fromaction="entrar"/>
+  <links id="pf14119714813696" target="pf14119711354971" source="pf14119711354972" outcome="regresa" fromaction="regresa"/>
+</pageflow:Pageflow>

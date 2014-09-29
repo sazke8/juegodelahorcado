@@ -11,8 +11,9 @@
 <body>
 	<f:view>
 		<h:form> 
-		<h:outputText value="ahorcado prueba 1"></h:outputText>
-		<h:outputText value="#{main2.entrarAlSistema()}"></h:outputText>
+		<h:outputText value="ahorcado primer version"></h:outputText>
+	<h:commandButton value="registrarse" action="registrar"></h:commandButton>
+	<h:commandButton value="entrar al sistema" action="entrar"></h:commandButton>
   
 </h:form> 
 	</f:view>

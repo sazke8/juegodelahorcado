@@ -30,6 +30,7 @@
   <listener>
     <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
   </listener>
+ 
   <resource-ref>
 	<description>Base de datos Mysql</description>
 	<res-ref-name>jdbc/sesiones</res-ref-name>
