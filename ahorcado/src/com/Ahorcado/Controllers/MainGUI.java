@@ -18,7 +18,7 @@ public class MainGUI {
     	  return "felicidades entraste";
       }
       else{
-    	  return "error";
+    	  return "no entraste";
       }
 		
 		

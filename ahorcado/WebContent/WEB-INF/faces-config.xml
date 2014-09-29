@@ -15,5 +15,41 @@
 		<managed-bean-class>com.Ahorcado.Controllers.MainGUI</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
+	<navigation-rule>
+		<display-name>index</display-name>
+		<from-view-id>/index.jsp</from-view-id>
+		<navigation-case>
+			<from-action>registrar</from-action>
+			<from-outcome>registrar</from-outcome>
+			<to-view-id>/registroJugador.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>registroJugador</display-name>
+		<from-view-id>/registroJugador.jsp</from-view-id>
+		<navigation-case>
+			<from-action>regresa</from-action>
+			<from-outcome>regresa</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>index</display-name>
+		<from-view-id>/index.jsp</from-view-id>
+		<navigation-case>
+			<from-action>entrar</from-action>
+			<from-outcome>entrar</from-outcome>
+			<to-view-id>/iniciarSesion.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>iniciarSesion</display-name>
+		<from-view-id>/iniciarSesion.jsp</from-view-id>
+		<navigation-case>
+			<from-action>regresa</from-action>
+			<from-outcome>regresa</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 
 </faces-config>
