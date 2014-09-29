@@ -1,5 +1,11 @@
 package com.Ahorcado.Modelo;
 
+import javax.faces.bean.ApplicationScoped;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+
+@ManagedBean(name="user")
+@ApplicationScoped
 public class Usuario {
  private int id;
  private String usuario;

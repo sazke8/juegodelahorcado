@@ -17,5 +17,5 @@
   
 </h:form> 
 	</f:view>
-</body>
+</body> 
 </html>

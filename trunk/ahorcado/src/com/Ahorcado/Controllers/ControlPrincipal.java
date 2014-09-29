@@ -1,5 +1,7 @@
 package com.Ahorcado.Controllers;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import com.Ahorcado.Modelo.Usuario;
@@ -15,7 +17,7 @@ public class ControlPrincipal {
 		user.setPartidasGanadas(0);
 		user.setPartidasPerdidas(0);
 		user.setPartidasJugadas(0);
-		boolean bandera=sql.ejecutarSQL("insert into usuarios (Nombre,PartidasJugadas,PartidasPerdidas,PartidasGanadas) values('?',0,0,0)",user.getUsuario());
+		boolean bandera=sql.ejecutarSQL(user.getUsuario());
 		return bandera;
 		
 	}
@@ -27,4 +29,28 @@ public class ControlPrincipal {
 		return null;
 		
 	}
-}
+	
+	
+	public ArrayList<Usuario> MostrarTodos() throws SQLException{
+		DAOManager sql=new DAOManager();
+		ResultSet result=sql.realizarConsulta("select *from usuarios");
+		ArrayList<Usuario> list = new ArrayList<Usuario>();
+		 
+		while(result.next()){
+			Usuario user = new Usuario();
+ 
+			user.setId(result.getInt("id"));
+			user.setUsuario(result.getString("Nombre"));
+			user.setPartidasGanadas(result.getInt("PartidasGanadas"));
+			user.setPartidasJugadas(result.getInt("PartidasJugadas"));
+			user.setPartidasPerdidas(result.getInt("PartidasPerdidas"));
+			 
+			list.add(user);
+		}
+ 
+		return list;
+	}
+		
+		
+	}
+
