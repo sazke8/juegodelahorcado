@@ -7,7 +7,12 @@
     version="2.0">
 	<managed-bean>
 		<managed-bean-name>userBean</managed-bean-name>
-		<managed-bean-class>UserBean</managed-bean-class>
+		<managed-bean-class>com.Ahorcado.Services.UserBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>main2</managed-bean-name>
+		<managed-bean-class>com.Ahorcado.Controllers.MainGUI</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
 
