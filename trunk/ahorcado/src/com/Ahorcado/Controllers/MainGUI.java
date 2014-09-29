@@ -23,4 +23,13 @@ public class MainGUI {
 		
 		
 	}
+	
+	public String registrar(){
+		Usuario user=new Usuario();
+		
+		ControlPrincipal control=new ControlPrincipal();
+		if(control.registroUsuario(user))
+		
+		
+	}
 }

@@ -17,7 +17,7 @@ aqui se registran jugadores nuevos
 <h:message for="txtNombre"/>
 
 
-<h:commandButton id="btnEnviar" value="Enviar" action="envio"/>
+<h:commandButton id="btnEnviar" value="Enviar" action="#{main2.registrar('nombre')}"/>
 
 </h:panelGrid>
 </h:form>
