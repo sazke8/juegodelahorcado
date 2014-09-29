@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body> 
 	<f:view>
 		<h:form> 
 		<h:outputText value="ahorcado primer version"></h:outputText>
